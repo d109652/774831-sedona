@@ -8,7 +8,7 @@
     <header class="main-header">
       <nav class="main-nav">
         <a class="main-header-logo" href="index.html">
-          <img src="img/index-logo.svg" width="140" height="170" alt="Логотип небольшого городка Седона в Аризоне"> <!-- размер лого, не точно -->
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип небольшого городка Седона в Аризоне"> <!-- размер лого, не точно -->
         </a>
         <ul class="site-nav">
           <li><a href="info.html">Информация</a></li>
@@ -21,8 +21,38 @@
 
     <main>
       <h1 class="visually-hidden">Поиск гостиниц</h1>
-      <!-- форма выбора критериев поиска -->
-      <h2 class="amount-results">Найдено: 3</h2> <!-- как то взаимодействует с формой поиска и должна отображать найденные варианты -->
+
+      <section class="filter">
+        <ul>
+          <li>
+            <h2>Инфраструктура:</h2>
+            <span>Бассейн</span>
+            <span>Парковка</span>
+            <span>Wi-Fi</span>
+          </li>
+          <li>
+            <h2>Тип жилья:</h2>
+            <span>Гостиница</span>
+            <span>Мотель</span>
+            <span>Апартаменты</span>
+          </li>
+          <li>
+            <h2>Стоимость в сутки:</h2>
+            <a href="#" class="btn"></a>
+          </li>
+        </ul>
+      </section>
+      <section class="sorting">
+        <span>Найдено: <!-- место для счетчика --></span>
+        <h3>Сортировка:</h3>
+        <ul>
+          <li><span>По цене</span></li>
+          <li><span>По типу</span></li>
+          <li><span>По рейтингу</span></li>
+          <li><span><!-- Место для формы button --></span></li>
+          <li><span><!-- Место для формы button --></span></li>
+        </ul>
+      </section>
       <ul class="results">
         <li>
           <h1>Amara resort & spa</h1>
