@@ -14,7 +14,7 @@
           <li><a href="info.html">Информация</a></li>
           <li><a href="gallery.html">Фото и видео</a></li>
           <li><a href="state_map.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+          <li><a href="inner.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -29,7 +29,7 @@
             <h3>Настоящий городок</h3>
             <span>№1</span>
             <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-            <img src="img/Layer-10.jpg" width="800" height="400" alt="настоящий городок">
+            <img src="img/SedonaN1.jpg" width="800" height="256" alt="настоящий городок">
           </li>
           <ul class="service-full">
             <li class="service-item">
@@ -49,7 +49,7 @@
             <h3>Там есть мост дьявола</h3>
             <span>№2</span>
             <p>Да, по нему можно пройти! Если вы осмелитесь</p>
-            <img src="img/Layer-5.jpg" width="800" height="400" alt="мост дьявола">
+            <img src="img/SedonaN2.jpg" width="800" height="256" alt="мост дьявола">
           </li>
           <li class="causes-item">
             <h3>Небольшая площадь</h3>
@@ -73,23 +73,37 @@
         <p>Укажите предполагаемые даты поездки,<br> и мы покажем лучшие предложения гостиниц в седоне</p>
       </section>
       <div class="modal modal-search">
-        <span>дата заезда:</span>
-        <span>дата выезда:</span>
-        <span>взрослые:</span>
-        <span>дети:</span>
+
+        <form class="modal-shearch-form" action="http://echo.https://echo.htmlacademy.ru" method="post">
+          <p class="modal-shearch-form-item">
+            <labele for="indata">Дата заезда:</labele>
+            <input id="indata" type="text" name="indata" value="" placeholder="dd.mm.yyyy">
+          </p>
+          <p class="modal-shearch-form-item">
+            <labele for="outdata">Дата выезда:</labele>
+            <input id="outdata" type="text" name="outdata" value="" placeholder="dd.mm.yyyy">
+          </p>
+          <p class="modal-shearch-form-item">
+            <labele for="adult">Взрослые:</labele>
+            <input id="adult" type="text" name="adult" value="" placeholder="2">
+          </p>
+          <p class="modal-shearch-form-item">
+            <labele for="child">Взрослые:</labele>
+            <input id="child" type="text" name="child" value="" placeholder="1">
+          </p>
+          <button type="submit" class="button">Найти</button>
+        </form>
       </div>
       <div class="map">
-        <img src="http://placehold.it/150x100" width="150" height="100" alt="Карта">
+        <img src="img/map.jpg" width="1200" height="594" alt="Карта">
       </div>
 
     </main>
 
     <footer>
-      <p class="footer-hashtag">
-        #visitsedona
-      </p>
+      <p class="footer-hashtag">#visitsedona</p>
       <div class="footer-social">
-          <ul>
+        <ul>
           <li><a class="social-button" href="#">Тивиттер</a></li>
           <li><a class="social-button" href="#">Фейсбук</a></li>
           <li><a class="social-button" href="#">YouTube</a></li>
