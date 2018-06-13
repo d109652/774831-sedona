@@ -31,20 +31,22 @@
             <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
             <img src="img/SedonaN1.jpg" width="800" height="256" alt="настоящий городок">
           </li>
-          <ul class="service-full">
-            <li class="service-item">
-              <h3>Жильё</h3>
-              <p>Рекомендуем пожить в настоящем мотеле, как в кино!</p>
-            </li>
-            <li class="service-item">
-              <h3>Еда</h3>
-              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-            </li>
-            <li class="service-item">
-              <h3>Сувиниры</h3>
-              <p>Не только китайского, но и местного производства!</p>
-            </li>
-          </ul>
+          <li class="service">
+            <ul class="service-full">
+              <li class="service-item">
+                <h3>Жильё</h3>
+                <p>Рекомендуем пожить в настоящем мотеле, как в кино!</p>
+              </li>
+              <li class="service-item">
+                <h3>Еда</h3>
+                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li class="service-item">
+                <h3>Сувиниры</h3>
+                <p>Не только китайского, но и местного производства!</p>
+              </li>
+            </ul>
+          </li>
           <li class="causes-item">
             <h3>Там есть мост дьявола</h3>
             <span>№2</span>
@@ -71,29 +73,8 @@
       <section class="search"> <!-- поиск гостиниц -->
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,<br> и мы покажем лучшие предложения гостиниц в седоне</p>
+        <button type="button" name="search-button">Поиск гостиницы в Седоне</button>
       </section>
-      <div class="modal modal-search">
-
-        <form class="modal-shearch-form" action="http://echo.https://echo.htmlacademy.ru" method="post">
-          <p class="modal-shearch-form-item">
-            <labele for="indata">Дата заезда:</labele>
-            <input id="indata" type="text" name="indata" value="" placeholder="dd.mm.yyyy">
-          </p>
-          <p class="modal-shearch-form-item">
-            <labele for="outdata">Дата выезда:</labele>
-            <input id="outdata" type="text" name="outdata" value="" placeholder="dd.mm.yyyy">
-          </p>
-          <p class="modal-shearch-form-item">
-            <labele for="adult">Взрослые:</labele>
-            <input id="adult" type="text" name="adult" value="" placeholder="2">
-          </p>
-          <p class="modal-shearch-form-item">
-            <labele for="child">Взрослые:</labele>
-            <input id="child" type="text" name="child" value="" placeholder="1">
-          </p>
-          <button type="submit" class="button">Найти</button>
-        </form>
-      </div>
       <div class="map">
         <img src="img/map.jpg" width="1200" height="594" alt="Карта">
       </div>
@@ -104,16 +85,37 @@
       <p class="footer-hashtag">#visitsedona</p>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#">Тивиттер</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">YouTube</a></li>
+          <li><a class="social-button" href="#" aria-label="Тивиттер"></a></li>
+          <li><a class="social-button" href="#" aria-label="Фейсбук"></a></li>
+          <li><a class="social-button" href="#" aria-label="YouTube"></a></li>
         </ul>
       </div>
       <p class="footer-copyright">
         <b>website by</b>
-        <a href="https://htmlacademy.ru" alt="HTML Academy"><img src="img/logo-htmlacademy.svg" width="115" height="41"></a>
+        <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy"></a>
       </p>
     </footer>
+    <div class="modal modal-search">
+        <form class="modal-shearch-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="modal-shearch-item">
+            <label for="indata">Дата заезда:</label>
+            <input id="indata" type="text" name="indata" placeholder="24 апреля 2017">
+          </p>
+          <p class="modal-shearch-item">
+            <label for="outdata">Дата выезда:</label>
+            <input id="outdata" type="text" name="outdata" placeholder="4 июля 2017">
+          </p>
+          <p class="modal-shearch-item">
+            <label for="adult">Взрослые:</label>
+            <input id="adult" type="text" name="adult" placeholder="2">
+          </p>
+          <p class="modal-shearch-item">
+            <label for="child">Взрослые:</label>
+            <input id="child" type="text" name="child" placeholder="0">
+          </p>
+          <button type="submit" class="button">Найти</button>
+        </form>
+      </div>
 
   </body>
 </html>

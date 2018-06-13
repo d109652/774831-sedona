@@ -14,7 +14,7 @@
           <li><a href="info.html">Информация</a></li>
           <li><a href="gallery.html">Фото и видео</a></li>
           <li><a href="state_map.html">Карта штата</a></li> <!-- мб ссылка на гугл карты -->
-          <li><a href="#">Гостиницы</a></li>
+          <li><a>Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -23,58 +23,58 @@
       <h1 class="visually-hidden">Поиск гостиниц</h1>
       <section class="filter">
         <h2 class="visually-hidden">Фильтр для поиска отеля</h2>
-          <form class="filter-list-form" action="https://echo.htmlacademy.ru" nethod="post">
-            <fieldset class="filter-list-form-item">
+          <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="filter-item">
               <legend>Инфраструктура:</legend>
                 <ul>
                   <li>
                     <label for="pool">Бассейн</label>
-                    <input id="pool" type="checkbox" name="pool" value="" checked>
+                    <input id="pool" type="checkbox" name="pool" checked>
                   </li>
                   <li>
                     <label for="parking">Парковка</label>
-                    <input id="parking" type="checkbox" name="parking" value="">
+                    <input id="parking" type="checkbox" name="parking">
                   </li>
                   <li>
                     <label for="Wi-Fi">Wi-Fi</label>
-                    <input id="Wi-Fi" type="checkbox" name="Wi-Fi" value="">
+                    <input id="Wi-Fi" type="checkbox" name="Wi-Fi">
                   </li>
                 </ul>
             </fieldset>
 
-            <fieldset class="filter-list-form-item">
+            <fieldset class="filter-item">
               <legend>Тип жилья:</legend>
               <ul>
                 <li>
                   <label for="Hotel">Гостиница</label>
-                  <input id="Hotel" type="checkbox" name="Hotel" value="" checked>
+                  <input id="Hotel" type="checkbox" name="Hotel" checked>
                 </li>
                 <li>
                   <label for="Motel">Мотель</label>
-                  <input id="Motel" type="checkbox" name="Motel" value="" checked>
+                  <input id="Motel" type="checkbox" name="Motel" checked>
                 </li>
                 <li>
                   <label for="Apartments">Апартаменты</label>
-                  <input id="Apartments" type="checkbox" name="Apartments" value="" checked>
+                  <input id="Apartments" type="checkbox" name="Apartments" checked>
                 </li>
               </ul>
             </fieldset>
-            <p>
-              <label for="value">Стоимость в сутки:</label><br>
+            <div>
+              <h3 for="value">Стоимость в сутки:</h3>
+              <!-- как сделать, пока не знаю-->
               <input id="value" type="range" name="value">
-            </p>
-            <button type="button" name="button">Показать</button>
+            </div>
+            <button type="submit" name="button">Показать</button>
           </form>
       </section>
       <section class="sorting">
         <span>Найдено: <!-- место для счетчика --></span>
         <h3>Сортировка:</h3>
         <ul>
-          <li><button type="button" name="value">По цене</button></li>
-          <li><button type="button" name="type">По типу</button></li>
-          <li><button type="button" name="rating">По рейтингу</button></li>
-          <li><button type="button" name="up">Сортировка вверх</button></li>
-          <li><button type="button" name="down">Сортировка вниз</button></li>
+          <li><a href="#" aria-label="По цене">По цене</a></li>
+          <li><a href="#" aria-label="По типу">По цене</a></li>
+          <li><a href="#" aria-label="По рейтингу">По цене</a></li>
+          <li><a href="#" aria-label="Сортировка">По цене</a></li>
         </ul>
       </section>
       <section class="content-list">
@@ -114,14 +114,14 @@
       </p>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#">Тивиттер</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">YouTube</a></li>
+          <li><a class="social-button" href="#" aria-label="Тивиттер"></a></li>
+          <li><a class="social-button" href="#" aria-label="Фейсбук"></a></li>
+          <li><a class="social-button" href="#" aria-label="YouTube"></a></li>
         </ul>
       </div>
       <p class="footer-copyright">
         <b>website by</b>
-        <a href="https://htmlacademy.ru" alt="HTML Academy" ><img src="img/logo-htmlacademy.svg" width="115" height="41"></a>
+        <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy"></a>
       </p>
     </footer>
 
