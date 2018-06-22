@@ -14,31 +14,25 @@ body {
 a {
   text-decoration: none;
 }
-.site-nav,
-.causes-all,
-.filter-item ul,
-.service-full,
-.footer-social ul,
-.sorting ul,
-.results {
+.site-nav {
   list-style: none;
 }
 .visually-hidden {
-position: absolute;
-width: 1px;
-height: 1px;
-margin: -1px;
-border: 0;
-padding: 0;
-clip: rect(0 0 0 0);
-overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .main-nav {
   line-height: 26px;
   font-weight: 700;
   background-color: #ffffff;
 }
-.site-nav a:link {
+.site-nav a {
   color: #000000;
 }
 .site-nav a:hover,
@@ -48,7 +42,7 @@ overflow: hidden;
 .site-nav a:active {
   color: rgba(0,0,0,0.3);
 }
-.current-item {
+.site-nav .current-item a {
   color: #503e33;
 }
 .inner {
@@ -57,14 +51,14 @@ overflow: hidden;
 .index {
   background-color: #ffffff;
 }
-.container-caption {
+.page-title {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   background-color: #ffffff;
   color: #000000;
 }
-.container-tagline {
+.page-text {
   line-height: 26px;
   background-color: #ffffff;
 }
@@ -72,6 +66,9 @@ overflow: hidden;
   background-color: #ffffff;
   font-size: 21px;
   font-weight: 700;
+}
+.causes-all {
+  list-style: none;
 }
 .causes-item span,
 .causes-item p {
@@ -97,6 +94,9 @@ overflow: hidden;
 .causes-item:nth-child(3) {
   background-color: #81b3d2;
   color: #ffffff;
+}
+.service-full {
+  list-style: none;
 }
 .service-item p {
   font-size: 14px;
@@ -133,6 +133,9 @@ overflow: hidden;
 .main-footer {
   background-color: rgba(255,255,255,0.9);
 }
+.footer-social ul {
+  list-style: none;
+}
 .footer-hashtag {
   font-size: 21px;
   line-height: 26px;
@@ -152,6 +155,13 @@ overflow: hidden;
 .modal input {
   font: inherit;
   text-transform: uppercase;
+  background-color: #f2f2f2;
+}
+.modal input:hover {
+  background-color: #ebebeb;
+}
+.modal input:focus {
+  background-color: #ffffff;
 }
 .modal-shearch-form input::-webkit-input-placeholder {
   color: #000000;
@@ -170,7 +180,7 @@ overflow: hidden;
 }
 .button:focus,
 .button:hover {
-  background-color: #81b3d2;
+  background-color: #669ec0;
 }
 .button:active {
   color:rgba(255,255,255,0.3);
@@ -182,6 +192,9 @@ overflow: hidden;
   background-position: top center;
   background-repeat: no-repeat;
   color: #ffffff;
+}
+.filter-item ul {
+  list-style: none;
 }
 .filter-item legend,
 .filter-form h3 {
@@ -208,6 +221,9 @@ overflow: hidden;
   font-size: 12px;
   line-height: 18px;
 }
+.sorting ul {
+  list-style: none;
+}
 .sorting span {
   font-size: 21px;
   font-weight: 700;
@@ -228,6 +244,9 @@ overflow: hidden;
 .sorting a:active {
   color: #000000;
   border-bottom: none;
+}
+.results {
+  list-style: none;
 }
 .results a {
   font-weight: 700;
