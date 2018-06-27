@@ -57,10 +57,16 @@ a {
   font-weight: 700;
   background-color: #ffffff;
   color: #000000;
+  width: 576px;
+  margin: 0 auto;
+  text-align: center;
 }
 .page-text {
   line-height: 26px;
   background-color: #ffffff;
+  width: 576px;
+  margin: 32px auto 50px auto;
+  text-align: center;
 }
 .causes {
   background-color: #ffffff;
@@ -201,19 +207,142 @@ a {
   font-size: 16px;
   font-weight: 700;
 }
-.filter-form button {
-  font: inherit;
+/*---------- css сложного фильтра -----------*/
+.filter-range {
+  width: 330px;
+
+  color: #ffffff;
   text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
   border: 2px solid #ffffff;
-  border-radius: 3px;
-  color:#ffffff;
-  background-color: transparent;
+  border-radius: 2px;
 }
-.filter-form button:hover,
-.filter-form button:focus {
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
   color: #000000;
-  background-color: #ffffff;
+
+  background: #ffffff;
 }
+/* конец сложной формы */
+
 .filter-item label {
   font-size:  14px;
 }
@@ -294,3 +423,114 @@ a {
   color:rgba(255,255,255,0.3);
   background-color: #503e33;
 }
+/*---- СЕТКА ----*/
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.main-nav {
+  display: flex;
+}
+.site-nav {
+  display: flex;
+}
+.index {
+  margin: 0px;
+  padding: 0px;
+}
+.causes-all {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+.causes-item {
+  display: flex;
+  text-align: center;
+}
+.causes-wrapper {
+  width: 400px;
+  height: 256px;
+}
+
+.service-full {
+  display: flex;
+  padding: 0px;
+}
+.service-item {
+  width: 400px;
+  height: 330px;
+  text-align: center;
+}
+.search {
+  height: 291px;
+  text-align: center;
+}
+.main-footer {
+  display: flex;
+  width: 1200px;
+  height: 120px;
+}
+.footer-hashtag,
+.footer-social,
+.footer-copyright {
+  margin: 0px;
+  width: 400px;
+}
+
+/*inner*/
+
+.filter-form {
+  display: flex;
+  height: 217px;
+}
+.filter-item {
+  border: none;
+  padding: 0px;
+  margin: 0px;
+}
+.filter-item ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.sorting {
+  display: flex;
+  height: 86px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.results {
+  margin: 0px;
+  padding: 0px;
+}
+.sorting h3 {
+  margin: 0px;
+}
+.sorting ul {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+.content-list {
+  height: 453px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.results li {
+  display: flex;
+  height: 150px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.results img {
+  width: 135px;
+  height: 90px;
+  padding:  30px 0px 30px 73px;
+}
+.results-wrapper {
+  margin-left: 30px;
+}
+.results-wrapper div {
+  width: 393px;
+}
+.map {
+  height: 594px;
+}
+
