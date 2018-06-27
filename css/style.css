@@ -57,10 +57,16 @@ a {
   font-weight: 700;
   background-color: #ffffff;
   color: #000000;
+  width: 576px;
+  margin: 0 auto;
+  text-align: center;
 }
 .page-text {
   line-height: 26px;
   background-color: #ffffff;
+  width: 576px;
+  margin: 32px auto 50px auto;
+  text-align: center;
 }
 .causes {
   background-color: #ffffff;
@@ -418,7 +424,7 @@ a {
   background-color: #503e33;
 }
 /*---- СЕТКА ----*/
-body {
+.container {
   width: 1200px;
   margin: 0 auto;
 }
@@ -432,15 +438,6 @@ body {
   margin: 0px;
   padding: 0px;
 }
-.container-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 216px;
-  text-align: center;
-  margin: 0px;
-}
 .causes-all {
   display: flex;
   flex-wrap: wrap;
@@ -452,7 +449,9 @@ body {
 }
 .causes-wrapper {
   width: 400px;
+  height: 256px;
 }
+
 .service-full {
   display: flex;
   padding: 0px;
@@ -462,19 +461,7 @@ body {
   height: 330px;
   text-align: center;
 }
-.two {
-  flex-direction: row-reverse;
-}
-.three {
-  flex-direction: column;
-  width: 400px;
-  height: 330px;
-}
 .search {
-  display: flex;
-  flex-direction: column;
-  padding: 0px;
-  margin: 0px;
   height: 291px;
   text-align: center;
 }
@@ -497,7 +484,6 @@ body {
   height: 217px;
 }
 .filter-item {
-  display: flex;
   border: none;
   padding: 0px;
   margin: 0px;
@@ -509,7 +495,6 @@ body {
 
 .sorting {
   display: flex;
-  margin: 0px;
   height: 86px;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -526,30 +511,26 @@ body {
   padding: 0px;
 }
 .content-list {
-  display: flex;
-  flex-direction: column;
   height: 453px;
-  margin: 0px;
-  padding: 0px;
+  border-bottom: 1px solid #e5e5e5;
 }
 .results li {
   display: flex;
   height: 150px;
-  width: 1200px;
   border-bottom: 1px solid #e5e5e5;
 }
-.img-wrapper {
-  width: 207px;
-}
-.img-wrapper img {
+.results img {
   width: 135px;
   height: 90px;
   padding:  30px 0px 30px 73px;
 }
 .results-wrapper {
-  width: 693px;
-  padding-left: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px; 
+  margin-left: 30px;
+}
+.results-wrapper div {
+  width: 393px;
+}
+.map {
+  height: 594px;
 }
 
