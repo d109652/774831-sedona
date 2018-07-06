@@ -1,4 +1,5 @@
 body {
+  min-width: 1200px;
   margin: 0;
   padding: 0;
 
@@ -36,12 +37,14 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
+  position: relative;
+
   width: 1200px;
   margin: 0 auto;
-}
 
-.test {
-  position: relative;
+  box-shadow:
+  -15px 0 8px -10px #dbdbdb,
+  15px 0 8px -10px #dbdbdb;
 }
 
 .main-nav {
@@ -119,8 +122,6 @@ input[type="radio"].visually-hidden {
 }
 
 .index {
-  margin: 0px;
-  padding: 0px;
   padding-top: 569px;
 
   background-color: #ffffff;
@@ -161,10 +162,11 @@ input[type="radio"].visually-hidden {
 }
 
 .causes-all {
+
   display: flex;
   flex-wrap: wrap;
-
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 
   list-style: none;
 }
@@ -385,6 +387,10 @@ input[type="radio"].visually-hidden {
   color:rgba(255,255,255,0.3);
 
   background-color: #503e33;
+}
+
+.button-wrapper a {
+  position: relative;
 }
 
 .map {
@@ -719,9 +725,9 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.content-list {
+/* .content-list {
   height: 453px;
-}
+} */
 
 .results a {
   font-weight: 700;
@@ -750,6 +756,7 @@ input[type="radio"].visually-hidden {
 }
 
 .results-wrapper div {
+  display: flex;
   width: 393px;
 }
 
@@ -779,10 +786,6 @@ input[type="radio"].visually-hidden {
   padding-bottom: 7px;
 }
 
-.results-caption:link {
-  color: #000000;
-}
-
 .results-caption:hover,
 .results-caption:focus {
   color: #95bed8;
@@ -792,9 +795,6 @@ input[type="radio"].visually-hidden {
   color: #cacaca;
 }
 
-.buttons-wrapper {
-  display: flex;
-}
 .buttons-wrapper p {
   margin: 0;
   width: 95px;
@@ -930,12 +930,16 @@ input[type="radio"].visually-hidden {
 .footer-social ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 150px;
-  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.footer-social li {
+  margin: 0 3px;
 }
 
 .footer-copyright {
@@ -1000,7 +1004,6 @@ input[type="radio"].visually-hidden {
 /*модальное окно*/
 .modal {
   position: absolute;
-  bottom: 199px;
   left: 316px;
 
   display: flex;
@@ -1012,6 +1015,11 @@ input[type="radio"].visually-hidden {
   color: #000000;
 
   background-color: #ffffff;
+
+  box-shadow:
+  -15px 0 8px -10px rgba(0, 1, 1, 0.08),
+  15px 0 8px -10px rgba(0, 1, 1, 0.08),
+  0 20px 8px -10px rgba(0, 1, 1, 0.08);
 }
 
 .modal input {
@@ -1055,7 +1063,7 @@ input[type="radio"].visually-hidden {
 }
 
 .when-going:first-child {
-  margin: 55px 0px 29px 57px;
+  margin: 55px 0px 29px 3px;
 }
 
 .in input {
@@ -1067,7 +1075,7 @@ input[type="radio"].visually-hidden {
 }
 
 .when-going:nth-child(2) {
-  margin: 0px 0px 30px 57px
+  margin: 0px 0px 30px 3px
 }
 
 .when-going input {
