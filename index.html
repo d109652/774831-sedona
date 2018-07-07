@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="no-js" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
@@ -86,8 +86,8 @@
       <h2 class="search-caption">Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <div class="button-wrapper">
-        <a href="#">Поиск гостиницы в Седоне</a>
-        <div class="modal modal-search">
+        <a class="button-popup" href="#">Поиск гостиницы в Седоне</a>
+        <div class="modal modal-show">
           <form class="modal-shearch-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="modal-shearch-item when-going in">
               <label for="indata">Дата заезда:</label>
@@ -130,7 +130,7 @@
     </section>
   </main>
   <div class="map">
-    <img src="img/map.jpg" width="1200" height="594" alt="Карта">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838162.8497460724!2d-112.35544126335135!3d34.854377145288886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1530694277558" width="1200" height="594" style="border:0" allowfullscreen></iframe>
     <footer class="main-footer footer-index">
     <p class="footer-hashtag">#visitsedona</p>
     <div class="footer-social">
@@ -178,5 +178,6 @@
 
 
 </div>
+<script src="js/script.js"></script>
 </body>
 </html>
