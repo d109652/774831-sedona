@@ -90,7 +90,7 @@ input[type="radio"].visually-hidden {
   width: 239px;
 }
 
-.site-nav li:nth-child(3) {
+.site-nav li:nth-child(4n-1) {
   margin-left: auto;
 }
 .site-nav li:nth-child(3),
@@ -209,7 +209,7 @@ input[type="radio"].visually-hidden {
 
 .causes-item:nth-child(4) span,
 .causes-item:nth-child(4) p {
-  margin: 21px 58px 0 58px;
+  margin: 21px 58px 40px 58px;
 
   color: #333333;
   line-height: 21px;
@@ -217,7 +217,7 @@ input[type="radio"].visually-hidden {
 
 .causes-item:nth-child(5) span,
 .causes-item:nth-child(5) p {
-  margin: 21px 60px 0 60px;
+  margin: 21px 60px 40px 60px;
 
   color: #333333;
   line-height: 21px;
@@ -225,7 +225,7 @@ input[type="radio"].visually-hidden {
 
 .causes-item:nth-child(6) span,
 .causes-item:nth-child(6) p {
-  margin: 21px 71px 0 71px;
+  margin: 21px 71px 40px 71px;
 
   color: #333333;
   line-height: 21px;
@@ -260,7 +260,7 @@ input[type="radio"].visually-hidden {
 }
 
 .causes-wrapper p {
-  margin: 21px 48px 0px 48px;
+  margin: 21px 48px 40px 48px;
 }
 
 .bridge span {
@@ -300,7 +300,7 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
 }
 .service-item p {
-  margin: 0 50px;
+  margin: 0 50px 40px 50px;
 
   font-size: 14px;
   font-weight: 400;
@@ -410,9 +410,9 @@ input[type="radio"].visually-hidden {
 .filter {
   color: #ffffff;
 
-  background-color: #000000;
+  background-color: #4178a1;
   background-image: url(../img/filter-background.jpg);
-  background-position: top center;
+  background-position: 0 -294px;
   background-repeat: no-repeat;
 }
 
